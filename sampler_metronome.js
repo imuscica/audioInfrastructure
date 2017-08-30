@@ -110,7 +110,7 @@ function scheduler() {
 
 function play() {
     isPlaying = !isPlaying;
-
+    console.log("pressing play");
     if (isPlaying) { // start playing
         current16thNote = 0;
         // nextNoteTime = audioContext.currentTime;
