@@ -110,7 +110,6 @@ function scheduler() {
 
 function play() {
     isPlaying = !isPlaying;
-    console.log("pressing play");
     if (isPlaying) { // start playing
         current16thNote = 0;
         // nextNoteTime = audioContext.currentTime;
@@ -121,6 +120,7 @@ function play() {
         timerWorker.postMessage("stop");
         return "play";
     }
+    console.log("timerWorker: ", timerWorker);
 }
 
 // function resetCanvas (e) {
