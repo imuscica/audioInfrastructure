@@ -120,6 +120,7 @@ function play() {
         timerWorker.postMessage("stop");
         return "play";
     }
+    console.log("-- playing --");
     console.log("timerWorker: ", timerWorker);
 }
 
