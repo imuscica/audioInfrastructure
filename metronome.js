@@ -1,5 +1,5 @@
 // var audioContext = null;
-var audioManagerObject = null;
+// var audioManagerObject = null;
 var oscObject = null;
 var isPlaying = false;      // Are we currently playing?
 var startTime;              // The start time of the entire sequence.
