@@ -187,9 +187,9 @@ function initMetronome(){
 
     // requestAnimFrame(draw);    // start the drawing loop.
 
-    // timerWorker = new Worker("js/metronomeworker.js");
+    timerWorker = new Worker("js/metronomeworker.js");
     // timerWorker = new Worker("metronomeworker.js");
-    timerWorker = new Worker("https://rawgit.com/imuscica/audioInfrastructure/master/metronomeworker.js");
+    // timerWorker = new Worker("https://rawgit.com/imuscica/audioInfrastructure/master/metronomeworker.js");
 
     timerWorker.onmessage = function(e) {
         if (e.data == "tick") {
